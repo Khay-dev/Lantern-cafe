@@ -1,0 +1,247 @@
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 44, 40, 0.8), rgba(12, 44, 40, 0.8)), url(../img/nav.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.hero .main-hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.main-hero h2 {
+    font-size: clamp(1.85rem, 3vw + 1rem, 3.4rem);
+    line-height: 1.65;
+}
+
+.main-hero p {
+    font-size: 18px;
+    line-height: 1.45;
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.section-1 .section-1-a,
+.section-3 .section-3-b {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.section-1 .section-1-b,
+.section-3 .section-3-a {
+    width: 50%;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: clamp(2rem, 2vw + 1rem, 3.2rem);
+    line-height: 1.45;
+    color: #073c36;
+}
+
+.section-1-a .section-text {
+    width: 90%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.35;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.section-2 {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-2-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.section-2-title {
+    font-size: clamp(2rem, 2vw + 1rem, 3.2rem);
+    line-height: 1.45;
+    font-weight: 900;
+    width: 70%;
+    color: #073c36;
+    text-align: center;
+    margin: auto;
+}
+
+.section-2-p {
+    width: 75%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.45;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-2 .section-2-b {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.section-2 .section-2-b .box {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn-13 {
+
+    border: 1px solid #073c36;
+    z-index: 1;
+}
+
+.btn-13:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #073c36;
+    transition: all 0.3s ease;
+}
+
+.btn-13:hover {
+    color: #fff;
+}
+
+.btn-13:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+.btn-13:active {
+    top: 2px;
+}
+
+.custom-btn {
+    padding: 10px 25px;
+    font-weight: 400;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.section-3 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.section-3 .section-text {
+    width: 90%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.45;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    .section-1,
+    .section-2,
+    .section-3 {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .main-hero p {
+        width: 90%;
+    }
+
+    .section-2 .section-2-b {
+        flex-direction: column;
+    }
+
+    .section-2 .section-2-b .box,
+    .section-2-p,
+    .section-1 .section-1-a,
+    .section-3 .section-3-b,
+    .section-1 .section-1-b,
+    .section-3 .section-3-a {
+        width: 100%;
+    }
+
+    .section-1 {
+        flex-direction: column;
+    }
+
+    .section-3 {
+        flex-direction: column-reverse;
+    }
+
+    .section-1 .section-1-a,
+    .section-3 .section-3-b {
+        align-items: center;
+        text-align: center;
+    }
+}

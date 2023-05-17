@@ -160,9 +160,7 @@ nav .logo-div {
 
 }
 
-nav {
-    background-color: #0c2c28;
-}
+
 
 
 
@@ -181,12 +179,6 @@ nav {
 
     .first-main {
         width: 55%;
-    }
-
-    .nav-menu-main {
-        gap: 3rem;
-        margin-top: 152px;
-        font-size: 36px;
     }
 }
 
@@ -230,7 +222,7 @@ nav {
     }
 
     .nav-close-btn {
-        margin: 20px;
+        margin: 20px 0px;
     }
 
     nav .nav-holder-3 {

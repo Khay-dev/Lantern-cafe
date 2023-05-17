@@ -2,23 +2,20 @@ import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Gallery from "./pages/Gallery";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route exact path="/" element={<Home />}>
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/gallery" element={<Gallery />} />
-        </Route>
+        <Route path="/" element={<Home/>}/>
+          <Route path="/Menu" element={<Menu/>} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 
