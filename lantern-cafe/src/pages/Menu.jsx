@@ -100,7 +100,7 @@ const Menu = () => {
             All
           </div>
           <div className="btn" onClick={() => sortData("Burger")}>
-            Delights
+            Bites
           </div>
           <div className="btn" onClick={() => sortData("main-dish")}>
             Main
