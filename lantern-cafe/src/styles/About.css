@@ -1,0 +1,222 @@
+.about-hero {
+    height: 40vh;
+    background: #073c36;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.main-about-hero {
+    position: absolute;
+    text-align: center;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.main-about-hero h2 {
+    font-size: clamp(1.25rem, 3vw + 1rem, 2.5rem);
+    line-height: 1.65;
+    color: #fff;
+    font-weight: 400;
+}
+
+.section-about-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.section-about-a {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.section-about-a .title {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2vw + 1rem, 3.2rem);
+    line-height: 1.25;
+    color: #073c36;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-about-a .text {
+    width: 90%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.35;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-about-b {
+    width: 50%;
+}
+
+.section-about-2 {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+.section-about-2 .main {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1.35;
+    font-family: 'Montserrat', sans-serif;
+    color: #073c36;
+}
+
+.section-about-3 {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section-about-3 .section-about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.section-about-header .title {
+    width: 50%;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.35;
+    font-family: 'Montserrat', sans-serif;
+    color: #073c36;
+}
+
+.section-about-header .text {
+    width: 40%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+    font-family: 'Montserrat', sans-serif;
+    color: #073c36;
+}
+
+.section-about-3 .section-about-main {
+    gap: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-about-main .main-box {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-box .main-img img {
+    height: 500px;
+}
+
+.main-box .main-name,
+.main-box .main-role {
+    font-size: 18px;
+    font-weight: 800;
+    color: #073c36;
+}
+
+.main-box .text {
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+/* responsive for tablet */
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    .section-about-1,
+    .section-about-2,
+    .section-about-3 {
+        padding: 50px 35px;
+    }
+
+    .section-about-2 {
+        width: 85%;
+    }
+
+    .section-about-3 .section-about-main {
+        flex-direction: column;
+    }
+
+    .section-about-main .main-box {
+        width: 70%;
+    }
+}
+
+/* responsive for mobile */
+@media screen and (max-width: 767px) {
+    .about-hero {
+        height: 30vh;
+    }
+
+    .section-about-1,
+    .section-about-2,
+    .section-about-3 {
+        padding: 30px;
+    }
+
+    .section-about-1,
+    .section-about-3 .section-about-header,
+    .section-about-3 .section-about-main {
+        flex-direction: column;
+    }
+
+    .section-about-a,
+    .section-about-b,
+    .section-about-main .main-box {
+        width: 100%;
+    }
+
+    .section-about-a,
+    .section-about-header .text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-about-2,
+    .section-about-header .text {
+        width: 100%;
+    }
+
+    .section-about-2 .main {
+        font-size: 20px;
+    }
+
+    .section-about-3 .section-about-header {
+        gap: 20px;
+    }
+
+    .section-about-a .text {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .section-about-main .main-box {
+        gap: 10px;
+    }
+}

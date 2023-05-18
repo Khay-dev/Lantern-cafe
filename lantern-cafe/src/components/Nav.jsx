@@ -64,15 +64,9 @@ const Nav = () => {
                   <p>About Us</p>
                 </div>
               </Link>
-              <Link to="/Contact">
-                <div className="nav-22">
-                  <span>04</span>
-                  <p>Contact</p>
-                </div>
-              </Link>
               <div className="nav-22">
                 <a href="mailto:xxxxxxxxxxxx.com">
-                  <span>05</span>
+                  <span>04</span>
                   <p>Reservation</p>
                 </a>
               </div>

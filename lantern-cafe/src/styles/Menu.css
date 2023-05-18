@@ -1,4 +1,4 @@
-.about-hero {
+.menu-hero {
     height: 55vh;
     background: #073c36;
     padding: 20px;
@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.main-about-hero {
+.main-menu-hero {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -23,21 +23,21 @@
     padding: 30px;
 }
 
-.main-about-hero h2 {
+.main-menu-hero h2 {
     font-size: clamp(1.25rem, 3vw + 1rem, 2.5rem);
     line-height: 1.65;
     color: #fff;
     font-weight: 400;
 }
 
-.main-about-hero p {
+.main-menu-hero p {
     font-size: 18px;
     line-height: 1.45;
     width: 60%;
     font-family: 'Montserrat', sans-serif;
 }
 
-.main-about-hero .about-btn {
+.main-menu-hero .menu-btn {
     border: 1px solid #fff;
     padding: 10px 25px;
     border-radius: 45px;
@@ -92,20 +92,22 @@
     font-weight: 600;
 }
 
+/* responsive for tablet */
 @media screen and (min-width: 768px) and (max-width: 1025px) {
-    .about-hero {
+    .menu-hero {
         height: 40vh;
     }
 }
 
+/* responsive for mobile */
 @media screen and (max-width: 767px) {
 
-    .main-about-hero p {
+    .main-menu-hero p {
         width: 100%;
         font-size: 15px;
     }
 
-    .main-about-hero .about-btn {
+    .main-menu-hero .menu-btn {
         font-size: 15px;
     }
 

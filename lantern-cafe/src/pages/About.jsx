@@ -1,17 +1,89 @@
+/* eslint-disable react/no-unescaped-entities */
 import Nav from "../components/Nav";
+import "../styles/About.css";
+import Image1 from "../img/nav.jpg";
+import Footer from "../components/Footer";
 
 const About = () => {
-    return ( 
-        <div className="about">
-            <div className="hero">
-            <Nav/>
-            </div>
-            <div className="content">
-                About ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nulla fugit nobis, quis, neque aspernatur accusamus deleniti illum repudiandae pariatur perferendis cumque ipsum. Sint ut illo, explicabo quasi ullam molestias reprehenderit quam cum, ipsum perferendis vitae beatae repellat! Corporis expedita natus accusamus cumque assumenda eligendi ratione tenetur voluptatibus, nisi rem, fuga commodi ab necessitatibus tempora? Corrupti molestiae sapiente numquam, dolore rem commodi neque blanditiis eos aliquid obcaecati exercitationem cupiditate illo suscipit veniam ut quis soluta? Recusandae quisquam magni aliquid. Impedit, quod. Commodi tenetur nulla tempore maiores possimus sed fuga amet quo dicta architecto distinctio, accusamus nobis quae quisquam labore vitae adipisci nam expedita hic voluptate saepe nihil asperiores impedit quia? Rerum animi nisi tempore deserunt autem eum omnis, veniam at saepe voluptatibus minima odio iusto quia culpa illum cupiditate in possimus ad sunt? In non voluptates a rerum accusantium tempora minus obcaecati voluptas eos expedita ut debitis aliquid, culpa sint cum illum molestiae sapiente tempore illo modi! Deserunt adipisci incidunt explicabo provident error quasi alias blanditiis maiores neque? Esse magni, saepe dolores sunt, perferendis, odio sint sit porro eos quo delectus? Harum, eius consectetur labore architecto quis distinctio ipsum numquam, optio non aperiam, animi rem quibusdam enim earum totam voluptatibus facilis odit molestias? Magnam in voluptatibus, deleniti commodi cumque nam ipsa ea velit praesentium soluta adipisci, officia ipsam earum nobis vel dignissimos doloremque. Amet, voluptatum dolorum dicta voluptatibus eligendi quo expedita corporis laboriosam quam aliquam beatae commodi nihil vitae minus, recusandae, ex iste sunt repudiandae architecto unde exercitationem? Suscipit sed voluptatibus velit sapiente pariatur ut ipsa sunt fuga accusantium ad repudiandae nesciunt nobis possimus veniam distinctio neque inventore dignissimos a recusandae, eius ex omnis aspernatur! Aspernatur, voluptatem. Cum deleniti sint cumque quas, maiores soluta reprehenderit, dicta dignissimos itaque obcaecati aliquid! Debitis molestias ab ex harum aliquid inventore odio suscipit porro.
-</div>
-
+  let teams = [
+    {
+      name: "Akosa Praise",
+      role: "Chef",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora id nemo adipisci quidem eaque laboriosam accusantium nisi autem quae?",
+      image: Image1,
+      id: crypto.randomUUID(),
+    },
+    {
+      name: "Uju Chinedum",
+      role: "Manager",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora id nemo adipisci quidem eaque laboriosam accusantium nisi autem quae?",
+      image: Image1,
+      id: crypto.randomUUID(),
+    },
+    {
+      name: "Okpara Joel",
+      role: "Chief Waiter",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora id nemo adipisci quidem eaque laboriosam accusantium nisi autem quae?",
+      image: Image1,
+      id: crypto.randomUUID(),
+    },
+  ];
+  return (
+    <div className="about">
+      <div className="about-hero">
+        <Nav />
+        <div className="main-about-hero">
+          <h2>ABOUT US</h2>
         </div>
-     );
-}
- 
+      </div>
+      <section className="section-about-1">
+        <div className="section-about-a">
+          <div className="title">
+            {" "}
+            Lantern Cafe Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+          </div>
+          <div className="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, quis
+            atque id dicta modi recusandae minima earum, voluptatum consectetur
+            quidem sapiente voluptas necessitatibus unde ullam Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Officia!
+          </div>
+        </div>
+        <div className="section-about-b">
+          <img src={Image1} alt="picture" />
+        </div>
+      </section>
+      <section className="section-about-2">
+        <div className="main">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis
+          voluptate sunt libero molestias quaerat saepe in temporibus nesciunt
+          dolorem"
+        </div>
+      </section>
+      <section className="section-about-3">
+        <div className="section-about-header">
+          <div className="title"> Our Team</div>
+          <div className="text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sed
+            omnis voluptatem. Accusantium, libero natus
+          </div>
+        </div>
+        <div className="section-about-main">
+          {teams.map((team) => (
+            <div className="main-box" key={team.id}>
+              <div className="main-img">
+                <img src={team.image} alt="" />
+              </div>
+              <div className="main-name">{team.name}</div>
+              <div className="main-role">{team.role}</div>
+              <div className="main-text">{team.text}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
+};
+
 export default About;

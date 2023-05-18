@@ -78,6 +78,7 @@ nav .main-nav {
     display: flex;
     flex-direction: column;
     font-size: 30px;
+    gap: 2rem;
 
 }
 

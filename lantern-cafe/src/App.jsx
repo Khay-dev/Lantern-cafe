@@ -1,5 +1,4 @@
 import Menu from "./pages/Menu";
-import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Home from "./pages/Home";
 
@@ -12,7 +11,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>}/>
           <Route path="/Menu" element={<Menu/>} />
-          <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
       </Routes>
     </Router>

@@ -81,16 +81,16 @@ const Menu = () => {
   };
   return (
     <div className="menu">
-      <div className="about-hero">
+      <div className="menu-hero">
         <Nav />
-        <div className="main-about-hero">
+        <div className="main-menu-hero">
           <h2>M E N U</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
             distinctio molestiae cum sapiente! Eligendi laborum sint alias
             nulla, commodi numquam.
           </p>
-          <div className="about-btn">Download Our Menu</div>
+          <div className="menu-btn">Download Our Menu</div>
         </div>
       </div>
       <section className="menu-section-2">
