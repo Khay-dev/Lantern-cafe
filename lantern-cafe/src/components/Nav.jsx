@@ -25,11 +25,15 @@ const Nav = () => {
     <>
       <nav
         style={{
-          backgroundColor: scrollPosition > 50 ? "#0c2c28" : "transparent",
+          backgroundColor: scrollPosition > 50 ? "#073c36" : "transparent",
           transition: "background-color 300ms ease-in-out",
         }}
       >
-        <div className="nav-holder-1">LOGO</div>
+        <div className="nav-holder-1">
+          <Link to="/">
+            <div className="logo"></div>{" "}
+          </Link>
+        </div>
         <div className="nav-holder-2">
           {" "}
           <button className="nav-btn " onClick={showNavbar}>
@@ -39,7 +43,9 @@ const Nav = () => {
 
         <div className="main-nav" ref={navRef}>
           <div className="first-main">
-            <div className="logo-div">LOGO</div>
+            <Link to="/">
+              <div className="logo-div"></div>
+            </Link>
           </div>
           <div className="nav-menu">
             <button className=" nav-close-btn" onClick={showNavbar}>
@@ -65,7 +71,7 @@ const Nav = () => {
                 </div>
               </Link>
               <div className="nav-22">
-                <a href="mailto:xxxxxxxxxxxx.com">
+                <a target="blank" href="https://wa.me/message/33PWDDHABE46H1">
                   <span>04</span>
                   <p>Reservation</p>
                 </a>
@@ -75,7 +81,7 @@ const Nav = () => {
         </div>
 
         <div className="nav-holder-3">
-          <a href="mailto:xxxxxxxxxxxx.com">
+          <a target="blank" href="https://wa.me/message/33PWDDHABE46H1">
             <div className="book">
               <FaConciergeBell />
               <p>Reservation</p>

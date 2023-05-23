@@ -12,7 +12,16 @@ nav {
 
 nav .nav-holder-1 {
     width: 35%;
-    color: #fff;
+
+}
+
+nav .nav-holder-1 .logo {
+    background-image: url(../img/IMG-2984.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 85px;
 }
 
 nav .nav-holder-2 {
@@ -47,8 +56,6 @@ nav .main-nav {
     transform: translateY(-100vh);
     transition: transform 500ms ease-in;
     z-index: 100;
-    gap: 20px;
-    background-color: #0c2c28;
 }
 
 .first-main {
@@ -71,14 +78,14 @@ nav .main-nav {
     display: flex;
     flex-direction: column;
     background-color: #0c2c28;
-    margin: 30px;
 }
 
 .nav-menu-main {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
-    gap: 2rem;
+    font-size: 35px;
+    gap: 3rem;
+    padding: 30px;
 
 }
 
@@ -125,12 +132,13 @@ nav .responsive_nav {
 }
 
 nav .logo-div {
-    padding: 15px;
-    width: 180px;
     margin: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url(../img/IMG-2984.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17%;
+    height: 85px;
 }
 
 .new-logo {
@@ -181,6 +189,11 @@ nav .logo-div {
     .first-main {
         width: 55%;
     }
+
+    nav .nav-holder-1 .logo {
+        width: 35%;
+
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -223,7 +236,7 @@ nav .logo-div {
     }
 
     .nav-close-btn {
-        margin: 20px 0px;
+        margin: 30px 20px;
     }
 
     nav .nav-holder-3 {
@@ -232,5 +245,10 @@ nav .logo-div {
 
     nav .nav-holder-2 {
         justify-content: right;
+    }
+
+    nav .nav-holder-1 .logo {
+        width: 75%;
+        height: 65px;
     }
 }

@@ -3,6 +3,7 @@ import "../styles/Menu.css";
 import Image1 from "../img/nav.jpg";
 import { useState } from "react";
 import Footer from "../components/Footer";
+import Dmenu from "../assets/menu.pdf";
 const Menu = () => {
   let Menus = [
     {
@@ -86,11 +87,14 @@ const Menu = () => {
         <div className="main-menu-hero">
           <h2>M E N U</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-            distinctio molestiae cum sapiente! Eligendi laborum sint alias
-            nulla, commodi numquam.
+            Explore our tantalizing menu, carefully curated with an array of
+            flavors and dishes crafted to satisfy every culinary desire.
           </p>
-          <div className="menu-btn">Download Our Menu</div>
+          <div className="menu-btn">
+            <a href={Dmenu} download="Menu">
+              Download Our Menu
+            </a>
+          </div>
         </div>
       </div>
       <section className="menu-section-2">

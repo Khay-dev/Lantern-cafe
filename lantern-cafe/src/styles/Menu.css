@@ -37,11 +37,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.main-menu-hero .menu-btn {
+.main-menu-hero .menu-btn a {
     border: 1px solid #fff;
     padding: 10px 25px;
     border-radius: 45px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.main-menu-hero .menu-btn a:hover {
+    background-color: #fff;
+    color: #073c36;
+    transition: all 400ms ease-in-out;
 }
 
 .menu-section-2 {

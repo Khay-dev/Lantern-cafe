@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
 
 
 
@@ -33,7 +34,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   margin: 0;
-  font-family: 'Marcellus', serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f2f2f2;

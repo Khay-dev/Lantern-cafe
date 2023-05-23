@@ -1,4 +1,5 @@
 import "./Footer.css";
+import Menu from "../assets/menu.pdf";
 import {
   AiOutlineDownload,
   AiOutlinePhone,
@@ -11,19 +12,27 @@ const Footer = () => {
       <footer>
         <div className="footer-3">
           <div className="number">
-            <AiOutlineWhatsApp />
-            <span>+2348153270969</span>
+            <a target="blank" href="https://wa.me/message/33PWDDHABE46H1">
+              <AiOutlineWhatsApp />
+              <span>+2349157657294</span>
+            </a>
           </div>
           <div className="socials">
-            <AiOutlineInstagram />
-            <span>Lantern_cafe_phc</span>
+            <a
+              target="blank"
+              href="https://instagram.com/lantern_cafe_phc?igshid=NTc4MTIwNjQ2YQ=="
+            >
+              <AiOutlineInstagram />
+              <span>Lantern_cafe_phc</span>
+            </a>
           </div>
           <div className="mail">
-            Lorem ipsum dolor sit amet, consectetur 
+            <a href="mailto:lanterncafephc@gmail.com.com">
+              Lanterncafephc@gmail.com
+            </a>
           </div>
           <div className="address">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit At
-            explicabo
+            28 Stadium Road, Inside Atrium Event Center
           </div>
         </div>
 
@@ -36,12 +45,16 @@ const Footer = () => {
         </div>
         <div className="footer-1">
           <div className="menu one">
-            <span>DOWNLOAD MENU</span>
-            <AiOutlineDownload />
+            <a href={Menu} download="Menu">
+              <span>DOWNLOAD MENU</span>
+              <AiOutlineDownload />
+            </a>
           </div>
           <div className="reserve one">
-            <span> RESERVATION</span>
-            <AiOutlinePhone />
+            <a target="blank" href="https://wa.me/message/33PWDDHABE46H1">
+              <span> RESERVATION</span>
+              <AiOutlinePhone />
+            </a>
           </div>
           <div className="note">
             {" "}

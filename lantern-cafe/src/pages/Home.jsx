@@ -8,17 +8,17 @@ const Home = () => {
     {
       image: Image1,
       title: "Lorem Ipsum",
-      id: crypto.randomUUID()
+      id: crypto.randomUUID(),
     },
     {
       image: Image1,
       title: "Lorem Ipsum",
-      id: crypto.randomUUID()
+      id: crypto.randomUUID(),
     },
     {
       image: Image1,
       title: "Lorem Ipsum",
-      id: crypto.randomUUID()
+      id: crypto.randomUUID(),
     },
   ];
 
@@ -32,9 +32,10 @@ const Home = () => {
             More Than A Restaurant.
           </h2>
           <p>
-            Indulge in all day dining delights,satisfying your cravings with our
-            extensive menu, available anytime. Enjoy Breakfast, Lunch or Dinner
-            at our own pace, as we redefine the traditional meal experience.
+            Indulge in all day dining delights, satisfying your cravings with
+            our extensive menu, available anytime. Enjoy Breakfast, Lunch or
+            Dinner at our own pace, as we redefine the traditional meal
+            experience.
           </p>
         </div>
       </div>
@@ -69,9 +70,12 @@ const Home = () => {
         <div className="section-1-a">
           <div className="section-title"> Lantern Cafe </div>
           <div className="section-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, quis
-            atque id dicta modi recusandae minima earum, voluptatum consectetur
-            quidem sapiente voluptas necessitatibus unde ullam . . . . .
+            We’re all about the uniqueness of our great meals with a memorable
+            dining experience, creating sweet memories and spending quality time
+            with loved ones, family and friends. The space is not only a feast
+            for the eyes we  also offer engaging
+            games and an atmosphere that sparks creativity and inspiration. This
+            imaginative heaven is brought to life by a dedicated team.
           </div>
           <Link to="/About">
             <button className="custom-btn btn-13">

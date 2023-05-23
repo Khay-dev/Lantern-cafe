@@ -20,7 +20,7 @@ footer .footer-3 {
     width: 35%;
 }
 
-footer .footer-1 .one {
+footer .footer-1 .one a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,6 +29,12 @@ footer .footer-1 .one {
     padding: 10px;
     border-radius: 45px;
     font-size: 14px;
+}
+
+footer .footer-1 .one a:hover {
+    background-color: #fff;
+    color: #073c36;
+    transition: all 400ms ease-in-out;
 }
 
 footer .footer-1 .note {
@@ -42,10 +48,16 @@ footer .footer-2 {
 
 footer .footer-2 .f-title {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 footer .footer-2 .name {
     font-size: 17px;
+    letter-spacing: 3px;
+}
+
+footer .footer-2 .time {
+    letter-spacing: 3px;
 }
 
 footer .footer-2 .time,
@@ -57,8 +69,8 @@ footer .footer-3 {
     gap: 10px;
 }
 
-footer .footer-3 .socials,
-footer .footer-3 .number {
+footer .footer-3 .socials a,
+footer .footer-3 .number a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -94,6 +106,10 @@ footer .footer-3 .number {
     }
 
     footer .footer-1 .note {
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    footer .footer-1 .one a {
+        font-size: 12px;
     }
 }
