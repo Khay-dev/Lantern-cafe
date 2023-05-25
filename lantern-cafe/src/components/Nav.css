@@ -64,7 +64,7 @@ nav .main-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(rgba(12, 44, 40, 0.70), rgba(12, 44, 40, 0.70)), url(../img/nav.jpg);
+    background-image: linear-gradient(rgba(12, 44, 40, 0.70), rgba(12, 44, 40, 0.70)), url(../img/nav-1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -194,6 +194,9 @@ nav .logo-div {
         width: 35%;
 
     }
+        nav .logo-div{
+            width: 20%;
+        }
 }
 
 @media screen and (max-width: 767px) {

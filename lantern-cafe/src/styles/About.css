@@ -221,4 +221,13 @@
     .section-about-main .main-box {
         gap: 10px;
     }
+
+    .section-about-header .title {
+        width: 70%;
+        text-align: center;
+    }
+
+    .main-box .main-img img {
+        height: 350px;
+    }
 }

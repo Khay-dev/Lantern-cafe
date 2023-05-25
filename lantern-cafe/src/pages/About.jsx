@@ -1,30 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
 import Nav from "../components/Nav";
 import "../styles/About.css";
-import Image1 from "../img/nav.jpg";
+import about1 from "../img/lantabout.png";
+import about2 from "../img/chef.jpg";
+import about3 from "../img/manager.jpg";
+import about4 from "../img/waiter.jpg";
 import Footer from "../components/Footer";
 
 const About = () => {
   let teams = [
     {
-      name: "Akosa Praise",
-      role: "Chef",
-      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora id nemo adipisci quidem eaque laboriosam accusantium nisi autem quae?",
-      image: Image1,
+      name: "Precious Daerego",
+      role: " Head Chef",
+      text: "His prior experience in local and continental cuisines is evident in every bite served and makes him the man behind the flavour.",
+      image: about2,
       id: crypto.randomUUID(),
     },
     {
-      name: "Uju Chinedum",
+      name: "Ebere R.E",
       role: "Manager",
-      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora id nemo adipisci quidem eaque laboriosam accusantium nisi autem quae?",
-      image: Image1,
+      text: "With her magnificient skills in managing the affairs of the business, she has and is still taking the business to a more refined level.",
+      image: about3,
       id: crypto.randomUUID(),
     },
     {
-      name: "Okpara Joel",
-      role: "Chief Waiter",
-      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora id nemo adipisci quidem eaque laboriosam accusantium nisi autem quae?",
-      image: Image1,
+      name: "Oluchi R.O",
+      role: "Chief Waitress",
+      text: "Utilizing her exquisite customer service skills, Lantern Cafe is rated high on customer service which is one of the keys to a successful business.",
+      image: about4,
       id: crypto.randomUUID(),
     },
   ];
@@ -52,7 +55,7 @@ const About = () => {
           </div>
         </div>
         <div className="section-about-b">
-          <img src={Image1} alt="picture" />
+          <img src={about1} alt="picture" />
         </div>
       </section>
       <section className="section-about-2">
@@ -66,8 +69,8 @@ const About = () => {
         <div className="section-about-header">
           <div className="title"> Our Team</div>
           <div className="text">
-            Our team is a dedicated and skilled group,
-            working harmoniously to create an exceptional dining experience.
+            Our team is a dedicated and skilled group, working harmoniously to
+            create an exceptional dining experience.
           </div>
         </div>
         <div className="section-about-main">

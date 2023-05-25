@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(12, 44, 40, 0.8), rgba(12, 44, 40, 0.8)), url(../img/nav.jpg);
+    background-image: linear-gradient(rgba(12, 44, 40, 0.75), rgba(12, 44, 40, 0.75)), url(../img/home.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -27,11 +27,11 @@
 
 .main-hero h2 {
     font-size: clamp(1.85rem, 3vw + 1rem, 3.4rem);
-    line-height: 1.65;
+    line-height: 1.35;
 }
 
 .main-hero p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.45;
     width: 60%;
     font-family: 'Montserrat', sans-serif;
@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 50px;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .section-1-a .section-text {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.45;
@@ -126,6 +126,7 @@
 }
 
 .btn-13 {
+    color: #073c36;
 
     border: 1px solid #073c36;
     z-index: 1;
@@ -179,7 +180,7 @@
 }
 
 .section-3 .section-text {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.45;

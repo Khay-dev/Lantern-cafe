@@ -1,70 +1,118 @@
+// import components & styles & assets
 import Nav from "../components/Nav";
 import "../styles/Menu.css";
-import Image1 from "../img/nav.jpg";
-import { useState } from "react";
 import Footer from "../components/Footer";
 import Dmenu from "../assets/menu.pdf";
+// import images
+import food1 from "../img/chops.png";
+import food2 from "../img/friesandgiz.png";
+import food3 from "../img/noodles.png";
+import food4 from "../img/waffels.png";
+import food5 from "../img/pasta.png";
+import food6 from "../img/burger.png";
+import food7 from "../img/plantain.png";
+import food8 from "../img/rice-1.png";
+import food9 from "../img/rice-2.png";
+import food10 from "../img/rice-3.png";
+import food11 from "../img/sandwich.png";
+import food12 from "../img/setoffries.png";
+import food13 from "../img/spag-2.png";
+import food14 from "../img/fritatata.png";
+import food15 from "../img/tray.png";
+
+import { useState } from "react";
+
 const Menu = () => {
   let Menus = [
     {
       name: "Burgers & Chips",
-      iamge: Image1,
+      iamge: food6,
       id: crypto.randomUUID(),
-      type: "Burger",
+      type: "Bites",
     },
     {
-      name: "Sandwich",
-      iamge: Image1,
+      name: "Sandwich & Chips",
+      iamge: food11,
       id: crypto.randomUUID(),
-      type: "Burger",
+      type: "Bites",
     },
     {
-      name: "Food Tray",
-      iamge: Image1,
+      name: "Food-Tray",
+      iamge: food15,
       id: crypto.randomUUID(),
-      type: "Burger",
+      type: "Bites",
     },
     {
-      name: "Rice & Chicken",
-      iamge: Image1,
+      name: "Waffle-Sandwich",
+      iamge: food4,
       id: crypto.randomUUID(),
-      type: "main-dish",
+      type: "Bites",
     },
     {
-      name: "Spagetti Bolognese",
-      iamge: Image1,
+      name: "SmallChops",
+      iamge: food1,
       id: crypto.randomUUID(),
-      type: "main-dish",
+      type: "Bites",
     },
     {
-      name: "Smoked Jollof",
-      iamge: Image1,
+      name: "Jollof-Rice & Protein",
+      iamge: food9,
       id: crypto.randomUUID(),
-      type: "main-dish",
+      type: "Main",
     },
     {
-      name: "Vegetable Soup",
-      iamge: Image1,
+      name: " Pasta-Napoletana",
+      iamge: food13,
       id: crypto.randomUUID(),
-      type: "main-dish",
+      type: "Main",
     },
     {
-      name: "Small Chops",
-      iamge: Image1,
+      name: "Mixed Rice Portion & Protein",
+      iamge: food8,
       id: crypto.randomUUID(),
-      type: "desert",
+      type: "Main",
     },
     {
-      name: "Cup Cake",
-      iamge: Image1,
+      name: "Dirty-Rice & Protein",
+      iamge: food10,
       id: crypto.randomUUID(),
-      type: "desert",
+      type: "Main",
     },
     {
-      name: "Ice Cream",
-      iamge: Image1,
+      name: "Spaghetti-Carbonara",
+      iamge: food5,
       id: crypto.randomUUID(),
-      type: "desert",
+      type: "Main",
+    },
+    {
+      name: "Fries & Protein",
+      iamge: food12,
+      id: crypto.randomUUID(),
+      type: "Others",
+    },
+    {
+      name: "Plantain-Frittata",
+      iamge: food14,
+      id: crypto.randomUUID(),
+      type: "Others",
+    },
+    {
+      name: "Special-Noodles",
+      iamge: food3,
+      id: crypto.randomUUID(),
+      type: "Others",
+    },
+    {
+      name: "Gizzdodo",
+      iamge: food7,
+      id: crypto.randomUUID(),
+      type: "Others",
+    },
+    {
+      name: "Fries & Protein",
+      iamge: food2,
+      id: crypto.randomUUID(),
+      type: "Others",
     },
   ];
   const [filterData, setFilterData] = useState(Menus);
@@ -103,14 +151,14 @@ const Menu = () => {
           <div className="btn" onClick={() => sortData("all")}>
             All
           </div>
-          <div className="btn" onClick={() => sortData("Burger")}>
+          <div className="btn" onClick={() => sortData("Bites")}>
             Bites
           </div>
-          <div className="btn" onClick={() => sortData("main-dish")}>
+          <div className="btn" onClick={() => sortData("Main")}>
             Main
           </div>
-          <div className="btn" onClick={() => sortData("desert")}>
-            Desert
+          <div className="btn" onClick={() => sortData("Others")}>
+            Others
           </div>
         </div>
         <div className="section-2-main">

@@ -60,7 +60,7 @@
 .menu-section-2 .section-2-btn {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     margin-bottom: 40px;
     font-family: 'Montserrat', sans-serif;
 }
