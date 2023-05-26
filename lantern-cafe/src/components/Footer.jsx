@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="name"> MON-FRI</div>
           <div className="time">9:00AM-9:00PM</div>
           <div className="name">SAT-SUN</div>
-          <div className="time">10:00AM-9:30PM</div>
+          <div className="time push">10:00AM-9:30PM</div>
           <div className="f-title">KARAOKE DAYS</div>
           <div className="name">WED/FRI/SAT/SUN</div>
           <div className="time">5:00PM-9:00PM</div>
