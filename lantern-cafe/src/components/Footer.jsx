@@ -27,9 +27,12 @@ const Footer = () => {
             </a>
           </div>
           <div className="mail">
-            <a href="mailto:lanterncafephc@gmail.com.com">
-              Lanterncafephc@gmail.com
+            <a href="mailto:lanterncafephc@gmail.com">
+              lanterncafephc@gmail.com
             </a>
+          </div>
+          <div className="mail">
+            <a href="mailto:info@lanterncafeng.com">info@lanterncafeng.com</a>
           </div>
           <div className="address">
             28 Stadium Road, Inside Atrium Event Center
@@ -39,9 +42,12 @@ const Footer = () => {
         <div className="footer-2">
           <div className="f-title">OPENING HOURS</div>
           <div className="name"> MON-FRI</div>
-          <div className="time">7:30-9:00</div>
+          <div className="time">9:00AM-9:00PM</div>
           <div className="name">SAT-SUN</div>
-          <div className="time">12:00-8:00</div>
+          <div className="time">10:00AM-9:30PM</div>
+          <div className="f-title">KARAOKE DAYS</div>
+          <div className="name">WED/FRI/SAT/SUN</div>
+          <div className="time">5:00PM-9:00PM</div>
         </div>
         <div className="footer-1">
           <div className="menu one">
